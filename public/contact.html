@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Cordev</title>
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="./css/bulma.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+
+</head>
+<body>
+
+<section class="hero is-primary is-fullheight is-hero-image">
+	<!-- Hero head: will stick at the top -->
+	<div class="hero-head">
+		<nav class="navbar is-transparent">
+		<div class="container">
+			<div class="navbar-brand">
+				<div class=" logo-brand">
+					<a href="http://cordev.xyz/index.html">
+						Cordev
+					</a>
+				</div>
+				<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+			<div id="navMenu" class="navbar-menu">
+			<div class="navbar-start color-over001">
+
+				<a href="examples.html" class="navbar-item">
+					Examples
+				</a>
+				<!-- <a href="about.html" class="navbar-item">
+					About
+				</a> -->
+				<a href="contact.html" class="navbar-item">
+					Contact
+				</a>
+
+			</div>
+			</div>
+		</div>
+		</nav>
+	</div>
+	
+	<!-- Hero content: will be in the middle -->
+	<div class="hero-body">
+		<div class="container">
+
+			<section class="section">
+					<div class="container">
+
+					<div class="columns">
+						<div class="column is-half">
+
+							<form id="contact-form" name="contact" method="post" action="./contact.php">
+
+								<label class="label">Name</label>
+								<p class="control">
+									<input class="input" id="name" type="text" name="name" placeholder="Please enter your name" required>
+								</p>
+								<label class="label">Email</label>
+
+								<p class="control">
+									<input class="input" type="text" name="email" placeholder="hello@youremail.com" required>
+								</p>
+								
+								<label class="label">Message</label>
+								<p class="control">
+								<textarea class="textarea" name="message" placeholder="How can we help you?" required></textarea>
+								</p>
+							
+								<p class="control">
+									<button class="button is-primary">Submit</button>
+								</p>
+
+							</form>
+						</div>
+						
+					</div>
+
+				</section>
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- Hero Footer -->
+		<div class="hero-footer">
+		<nav class="tabs is-fullwidth tabs-subsection">
+		<div class="container">
+
+		</div>
+		</nav>
+	</div>
+	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+
+		// Get all "navbar-burger" elements
+		const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+		// Check if there are any navbar burgers
+		if ($navbarBurgers.length > 0) {
+
+		// Add a click event on each of them
+		$navbarBurgers.forEach( el => {
+			el.addEventListener('click', () => {
+
+			// Get the target from the "data-target" attribute
+			const target = el.dataset.target;
+			const $target = document.getElementById(target);
+
+			// Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+			el.classList.toggle('is-active');
+			$target.classList.toggle('is-active');
+
+			});
+		});
+		}
+
+		});
+	</script>
+
+</body>
+</html>

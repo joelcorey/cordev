@@ -1,0 +1,122 @@
+body {
+  font-family: 'Hind', sans-serif;
+}
+
+.navbar-brand {
+  margin-right:15px;
+}
+
+.logo-brand {
+  padding: 14px 10px 5px 10px;
+  border-radius: 0 0 7px 7px;
+}
+
+a.navbar-item:hover {
+  background: transparent;
+}
+
+.is-hero-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #999;
+}
+
+@media (max-width: 1211px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_757.jpg");
+  }
+}
+
+@media (min-width: 1212px) and (max-width: 1521px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_1212.jpg");
+  }
+}
+
+@media (min-width: 1522px) and (max-width: 1788px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_1522.jpg");
+  }
+}
+
+@media (min-width: 1789px) and (max-width: 2001px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_1789.jpg");
+  }
+}
+
+@media (min-width: 2002px) and (max-width: 2832px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_2002.jpg");
+  }
+}
+
+@media (min-width: 2833px) and (max-width: 3492px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_2833.jpg");
+  }
+}
+
+@media (min-width: 3493px) and (max-width: 3839px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_3493.jpg");
+  }
+}
+
+@media (min-width: 3840px) {
+  .is-hero-image {
+    background-image: url("../img/background/ameen-fahmy-w_3840.jpg");
+  }
+}
+
+.tag:not(body).is-light {
+    background-color: #f5f5f5;
+    color: #ababab;
+}
+
+
+.hero-footer {
+    background: #003151;
+    padding: 15px;
+    z-index: 1;
+}
+
+.tags-search {
+    margin:10px 0;
+}
+
+.color-over001 {
+  color: #08233e !important;
+}
+
+.border-bottom
+{
+  border-bottom: 1px solid black;
+}
+
+.card-height-20
+{
+  height: 20%;
+}
+
+.card {
+  height: 100%;
+}
+
+.is-horizontal-center 
+{
+  justify-content: center;
+}
+
+.svg-scale
+{
+  width: 50%;
+  height: 50%;
+}
+
+.card-transparent
+{
+  background: rgba(0, 0, 0, 0.0);
+}
